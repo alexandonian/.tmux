@@ -292,3 +292,5 @@ tmux_conf_copy_to_os_clipboard=false
 
 # move status line to top
 #set -g status-position top
+bind -r n next-window
+bind -r p previous-window
