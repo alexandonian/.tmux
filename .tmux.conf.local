@@ -295,3 +295,6 @@ tmux_conf_copy_to_os_clipboard=false
 #set -g status-position top
 bind -r n next-window
 bind -r p previous-window
+
+# Don't register repeated keypresses.
+set-option -g repeat-time 0
