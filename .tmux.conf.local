@@ -293,8 +293,14 @@ tmux_conf_copy_to_os_clipboard=false
 
 # move status line to top
 #set -g status-position top
-bind -r n next-window
-bind -r p previous-window
+bind n next-window
+bind p previous-window
 
 # Don't register repeated keypresses.
-set-option -g repeat-time 0
+#set-option -g repeat-time 0
+
+# override pane navigation (non-repeatable)
+bind  h select-pane -L  # move left
+bind  j select-pane -D  # move down
+bind  k select-pane -U  # move up
+bind  l select-pane -R  # move right
